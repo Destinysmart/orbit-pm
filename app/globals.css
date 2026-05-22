@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Outfit", system-ui, sans-serif;
+  background: #09090f;
+  color: #e2e8f0;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 2px;
+}
+
+input,
+button,
+textarea {
+  font-family: "Outfit", system-ui, sans-serif;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hov-row:hover {
+  background: #1e1e2e !important;
+  border-color: rgba(255, 255, 255, 0.09) !important;
+}
+.hov-side:hover {
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+.hov-card:hover {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  transform: translateY(-1px);
+}
+.hov-card {
+  transition: all 0.15s ease;
+}
+.hov-row {
+  transition: background 0.1s ease;
+}
+.hov-notif:hover {
+  background: rgba(255, 255, 255, 0.03) !important;
+}
+.hov-auto:hover {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.slide {
+  animation: slideIn 0.2s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade {
+  animation: fadeUp 0.25s ease;
+}
