@@ -7,7 +7,7 @@ import {
   Plus,
   Search,
   List,
-  LayoutKanban,
+  Columns ,
   Bell,
   Zap,
   Settings,
@@ -793,7 +793,7 @@ export default function Orbit() {
           {page === "tasks" && (
             <div style={{ display: "flex", gap: 2, marginLeft: "auto" }}>
               <ViewBtn icon={<List size={15} />}         active={view === "list"}  onClick={() => setView("list")} />
-              <ViewBtn icon={<LayoutKanban size={15} />} active={view === "board"} onClick={() => setView("board")} />
+              <ViewBtn icon={<Columns  size={15} />} active={view === "board"} onClick={() => setView("board")} />
             </div>
           )}
         </div>
